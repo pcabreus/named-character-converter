@@ -1,0 +1,33 @@
+{
+    "name": "pcabreus-utils/named-character-converter",
+    "type": "library",
+    "description": "A library base for content aware entities for PositibeLabs Project",
+    "keywords": [
+        "html",
+        "character converter",
+        "positibe",
+        "positibelabs"
+    ],
+    "homepage": "https://github.com/pcabreus/NamedCharacterConverter",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Pedro Carlos Abreu Jiménez",
+            "email": "pcabreus@gmail.com",
+            "homepage": "https://github.com/pcabreus"
+        },
+        {
+            "name": "PositibeLabs",
+            "homepage": "http://www.positibelabs.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Pcabreus\\Utils\\Html\\": ""}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
