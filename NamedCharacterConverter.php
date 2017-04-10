@@ -40,6 +40,7 @@ class NamedCharacterConverter
             '&Ntilde;' => 'Ñ',
             '&uuml;' => 'ü',
             '&Uuml;' => 'Ü',
+            '&iquest;' => '¿',
         );
     }
 
@@ -51,67 +52,11 @@ class NamedCharacterConverter
      */
     public static function display($name)
     {
-        switch ($name) {
-            case ('&gt;'):
-                return '>';
-                break;
-            case ('&lt;'):
-                return '<';
-                break;
-            case ('&amp;'):
-                return '&';
-                break;
-            case ('&quot;'):
-                return '"';
-                break;
-            case ('&nbsp;'):
-                return ' ';
-                break;
-            case ('&aoacute;'):
-                return 'á';
-                break;
-            case ('&eacute;'):
-                return 'é';
-                break;
-            case ('&iacute;'):
-                return 'í';
-                break;
-            case ('&oacute;'):
-                return 'ó';
-                break;
-            case ('&uacute;'):
-                return 'ú';
-                break;
-            case ('&ntilde;'):
-                return 'ñ';
-                break;
-            case ('&Aoacute;'):
-                return 'Á';
-                break;
-            case ('&Eacute;'):
-                return 'É';
-                break;
-            case ('&Iacute;'):
-                return 'Í';
-                break;
-            case ('&Oacute;'):
-                return 'Ó';
-                break;
-            case ('&Uacute;'):
-                return 'Ú';
-                break;
-            case ('&Ntilde;'):
-                return 'Ñ';
-                break;
-            case ('&uuml;'):
-                return 'ü';
-                break;
-            case ('&Uuml;'):
-                return 'Ü';
-                break;
-            default:
-                return $name;
+        if (isset(self::characters()[$name])) {
+            return self::characters()[$name];
         }
+
+        return $name;
     }
 
     public static function convert($html)
