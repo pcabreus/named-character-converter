@@ -1,7 +1,7 @@
 {
     "name": "pcabreus-utils/named-character-converter",
     "type": "library",
-    "description": "A library base for content aware entities for PositibeLabs Project",
+    "description": "Convert html encode characters into its proper characters",
     "keywords": [
         "html",
         "character converter",
@@ -10,7 +10,7 @@
     ],
     "homepage": "https://github.com/pcabreus/NamedCharacterConverter",
     "license": "MIT",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "authors": [
         {
             "name": "Pedro Carlos Abreu Jiménez",
