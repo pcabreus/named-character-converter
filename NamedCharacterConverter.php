@@ -63,4 +63,9 @@ class NamedCharacterConverter
     {
         return str_replace(array_keys(self::characters()), array_values(self::characters()), $html);
     }
+
+    public static function encode($text)
+    {
+        return str_replace(array_values(self::characters()), array_keys(self::characters()), $text);
+    }
 } 

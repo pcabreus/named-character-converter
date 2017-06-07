@@ -1,7 +1,7 @@
 NamedCharacterConverter
 =======================
 
-This library provide you a simple way to convert html special character into words character.
+This library provide you a simple way to convert and encode html special character into words character.
 
 This version only supports:
 
