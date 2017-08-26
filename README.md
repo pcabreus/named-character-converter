@@ -7,6 +7,7 @@ This version only supports:
 
     '&gt;' => '>',
     '&lt;' => '<',
+    '&#39;' => '\'',
     '&amp;' => '&',
     '&quot;' => '"',
     '&nbsp;' => ' ',

@@ -23,6 +23,7 @@ class NamedCharacterConverter
         return array(
             '&gt;' => '>',
             '&lt;' => '<',
+            '&#39;' => '\'',
             '&amp;' => '&',
             '&quot;' => '"',
             '&nbsp;' => ' ',
